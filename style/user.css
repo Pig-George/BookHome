@@ -1,0 +1,193 @@
+
+
+#user>div {
+	position: relative;
+	float: left;
+	display: inline-block;
+	border-radius: 20px;
+	padding: 10px;
+	box-shadow: -10px -10px 20px 2px #8080804f;
+	margin: 10px;
+}
+#user,
+#user [id] {
+	transition: all ease-in-out 0.3s;
+}
+
+#user>div:hover {
+	box-shadow: -5px -5px 30px 4px #4545455f;
+}
+
+#user-info {
+	left: -350px;
+	opacity: 0;
+}
+
+#user-data {
+	right: -350px;
+	opacity: 0;
+}
+
+#user-info>div {
+	margin: 0 auto 20px auto;
+}
+
+
+
+#user-info-change {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	height: 25px;
+	width: 25px;
+	font-family: icon;
+	font-size: 14px;
+	text-align: center;
+	line-height: 25px;
+	z-index: 10;
+	border-radius: 50%;
+}
+
+
+#user-info-change:hover {
+	cursor: pointer;
+	color: #3A9FF7;
+}
+
+#user-info-head {
+	position: relative;
+}
+
+
+#user-head-box {
+	position: relative;
+	display: flex;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#user-head-portrait-box {
+	position: relative;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	margin: 20px auto 10px auto;
+	border: 1px solid #808080;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+#user-head-portrait {
+	height: 80px;
+	width: 80px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	margin-top: -1px;
+	margin-left: -1px;
+}
+
+#user-head-portrait-box>span {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	font-size: 15px;
+	line-height: 80px;
+	border-radius: 50%;
+	color: #ffffffc0;
+	background-color: transparent;
+	opacity: 0;
+	transition: all ease-in-out 0.3s;
+}
+
+#user-head-portrait-box>span:hover {
+	cursor: pointer;
+	background-color: #80808090;
+	opacity: 1;
+}
+
+#user-head-portrait-box:hover {
+	border-color: #4a4a4a;
+}
+
+
+
+#user-ip {
+	position: absolute;
+	bottom: -10px;
+	right: 0px;
+	font-size: 12px;
+}
+
+
+#user-name {
+	width: 250px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#user-sign {
+	width: calc(100% - 10px);
+	border: 1px solid transparent;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: transparent;
+	margin-bottom: 10px;
+	color: #808080;
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	letter-spacing:1px;
+	line-height: 20px;
+}
+
+#user-sign:hover {
+	background-color: #ffffff50;
+	border-color: #8b8b8b;
+}
+
+#user-sign:focus {
+	border-color: #8b8b8b;
+	background-color: #ffffff;
+	box-shadow: inset -2px -2px 5px 0px #8080804f
+}
+
+#user-info-footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+#user-info-footer>div {
+	padding: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
+
+#user-info-footer>div:hover {
+	color: #4A4A4A;
+}
+
+#user-info-footer>div>div {
+	margin-bottom: 10px;
+}
+
+#user #user-data {
+	padding: 15px;
+	width: 70%;
+}
+
+
+#user-data>img {
+	height: 100%;
+	width: 100%;
+}
+
+
+
+
+

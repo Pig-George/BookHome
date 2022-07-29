@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>个人主页</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="style/nav_footer.css" />
+		<link rel="stylesheet" type="text/css" href="style/login.css">
+		<link rel="stylesheet" type="text/css" href="style/user.css" />
+		<script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	</head>
+	<body>
+		<div id="head">
+			<div id="head-1">
+				<a href="first.html" class="logo"><img src="images/logo.png"></a>
+				<div id="head-2">
+					<ul>
+						<li><a href="first.html"><span>首页</span></a></li>
+						<li><a href="ranking.html"><span>榜单</span></a></li>
+						<li><a href="user.html"><span>个人中心</span></a></li>
+						<li><a href="about.html"><span>关于</span></a></li>
+					</ul>
+					<form action="#" method="post" name="form1">
+						<input type="search" placeholder="请输入搜索" id="search" autocomplete="off" maxlength="20" />
+						<input type="submit" id="submit" value="" title="搜索" />
+					</form>
+				</div>
+				<div id="head-3">
+					<ul>
+						<li>
+							<a href="user.html" >
+								<img src="./img/a0.jpg" id="head-portrait" class="head-portrait-img">
+							</a>
+							<div id="head-portrait-box" >
+								<h3 id="user-name" class="user-name"></h3>
+								<p id="nav-user-sign" class="user-sign"></p>
+								<div id="nav-user-info-footer">
+									<div id="nav-user-coll-head" class="box-shadow">
+										<div>我的收藏</div>
+										<h3 id="nav-user-coll-num"></h3>
+									</div>
+									<div id="nav-user-concern-head" class="box-shadow">
+										<div>我的关注</div>
+										<h3 id="nav-user-concern-num"></h3>
+									</div>
+									<div id="nav-user-history-head" class="box-shadow">
+										<div>历史记录</div>
+										<h3 id="nav-user-history-num"></h3>
+									</div>
+									
+									
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="" id="user-news"></a>
+							<span class="dot"></span>
+							<ul style="display: none;">
+								<li>
+									<a href="">我的消息</a>
+									<span class="dot"></span>
+								</li>
+							</ul>
+						</li>
+						<!-- 
+						导航栏 用户小工具栏 代码框架：
+						<li>
+							<a href="...">...</a>  icon图标
+							<span class="dot"></span>  小圆点
+							...
+							<ul style="display: none;">   下拉菜单内容
+								<li>
+									<a href="...">...</a> 菜单内容子项1
+									<span class=".."></span> 小圆点或者是其他符号
+								</li>
+								<li>
+									<a href="...">...</a> 菜单内容子项2
+									<span class=".."></span> 小圆点或者是其他符号
+								</li>
+								...
+							</ul>
+						</li> 
+						-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var search = document.querySelector('#search');
+			search.onfocus = function() {
+				search.placeholder = '';
+			}
+			search.onblur = function() {
+				search.placeholder = '请输入搜索';
+			}
+		</script>
+		<script type="module" src="./js/nav.js"></script>
+		<div id="body-1">
+			<div id="body-2">
+				<div id="body-3-enter">
+					<h1 id="body_nav">
+						<span id="dynamic_title" class="dynamic_title"><span>&nbsp;</span></span>
+					</h1>
+					<div id="login" style="display:none;">
+						<div id="login_head">
+							<div id="login_head_nav">
+								<h2 >登录：</h2>
+								<h2 >注册：</h2>
+							</div>
+						</div>
+						<form method="post" name="userInfo">
+							<div id="user-form-change">
+								<input type="text" name="userName" id="uname" placeholder="用户名" autofocus="autofocus" maxlength="18">
+								<div id="pwd_head">
+									<input type="password"  name="userPwd" id="upwd" placeholder="密码" maxlength="32">
+									<span id="display_pwd"></span>
+								</div>
+								<div id="user-form-event">
+									<span id="forget_pwd">忘记密码</span>
+									<span id="user-change-button">注册</span>
+								</div>
+								<div id="pwd_head">
+									<input type="password" name="surePwd" id="sure_pwd"  placeholder="确认密码" disabled="disabled" maxlength="32">
+									<span id="display_pwd"></span>
+								</div>
+								<input type="text" name="userMail" id="uemail"  placeholder="验证邮箱" disabled="disabled" maxlength="32">
+								<div id="auth_code_haed">
+									<input type="text" name ="authCode" id="auth_code" placeholder="请输入验证码" disabled="disabled" maxlength="6">
+									<input type="button" id="send_auth_code" value="获取验证码" disabled="disabled">
+								</div>
+							</div>
+							<input type="button" id="submit_button" value="登录">
+						</form>
+					</div>
+					<div id="user" style="display: none;">
+						<div id="user-info" >
+							<span id="user-info-change" class="box-shadow"></span>
+							<div id="user-info-head">
+								<div id="user-head-box">
+									<div id="user-head-portrait-box">
+										<img id="user-head-portrait" class="head-portrait-img" src="" >
+										<input type="file" id="upfile" name="head-portrait" style="display: none;"/>
+										<span>更换头像</span>
+									</div>
+									<span id="user-ip"></span>
+								</div>
+							</div>
+							<h3 id="user-name" class="user-name"></h3>
+							<input id="user-sign" class="user-sign" placeholder="点击编辑个性签名" type="text" maxlength="50"/>
+							<div id="user-info-footer">
+								<div id="user-coll-head" class="box-shadow">
+									<div>我的收藏</div>
+									<h3 id="user-coll-num">0</h3>
+								</div>
+								<div id="user-concern-head" class="box-shadow">
+									<div>我的关注</div>
+									<h3 id="user-concern-num">0</h3>
+								</div>
+								<div id="user-history-head" class="box-shadow">
+									<div>历史记录</div>
+									<h3 id="user-history-num">0</h3>
+								</div>
+							</div>
+						</div>
+						<div id="user-data">
+							<hr class="dot-line">
+							<img src="./images/user-test.png" >
+							<hr class="dot-line">
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="js/user.js" type="module" charset="utf-8"></script>
+			<div id="footer-1" style="display:none;">
+			<div id="footer-2" class="dynamic_title">
+				<span>&nbsp;</span>
+			</div>
+		</div>
+	</body>
+</html>

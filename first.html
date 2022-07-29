@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>主页</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="style/nav_footer.css" />
+		<link rel="stylesheet" type="text/css" href="style/first.css" />
+		<script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+		<script src="js/first.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="head">
+			<div id="head-1">
+				<a href="first.html" class="logo"><img src="images/logo.png"></a>
+				<div id="head-2">
+					<ul>
+						<li><a href="first.html"><span>首页</span></a></li>
+						<li><a href="ranking.html"><span>榜单</span></a></li>
+						<li><a href="user.html"><span>个人中心</span></a></li>
+						<li><a href="about.html"><span>关于</span></a></li>
+					</ul>
+					<form action="#" method="post" name="form1">
+						<input type="search" placeholder="请输入搜索" id="search" autocomplete="off" maxlength="20" />
+						<input type="submit" id="submit" value="" title="搜索" />
+					</form>
+				</div>
+				<div id="head-3">
+					<ul>
+						<li>
+							<a href="user.html" >
+								<img src="./img/a0.jpg" id="head-portrait" class="head-portrait-img">
+							</a>
+							<div id="head-portrait-box" >
+								<h3 id="user-name" class="user-name"></h3>
+								<p id="nav-user-sign" class="user-sign"></p>
+								<div id="nav-user-info-footer">
+									<div id="nav-user-coll-head" class="box-shadow">
+										<div>我的收藏</div>
+										<h3 id="nav-user-coll-num"></h3>
+									</div>
+									<div id="nav-user-concern-head" class="box-shadow">
+										<div>我的关注</div>
+										<h3 id="nav-user-concern-num"></h3>
+									</div>
+									<div id="nav-user-history-head" class="box-shadow">
+										<div>历史记录</div>
+										<h3 id="nav-user-history-num"></h3>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="" id="user-news"></a>
+							<span class="dot"></span>
+							<ul style="display: none;">
+								<li>
+									<a href="">我的消息</a>
+									<span class="dot"></span>
+								</li>
+							</ul>
+						</li>
+						<!-- 
+						导航栏 用户小工具栏 代码框架：
+						<li>
+							<a href="...">...</a>  icon图标
+							<span class="dot"></span>  小圆点
+							...
+							<ul style="display: none;">   下拉菜单内容
+								<li>
+									<a href="...">...</a> 菜单内容子项1
+									<span class=".."></span> 小圆点或者是其他符号
+								</li>
+								<li>
+									<a href="...">...</a> 菜单内容子项2
+									<span class=".."></span> 小圆点或者是其他符号
+								</li>
+								...
+							</ul>
+						</li> 
+						-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var search = document.querySelector('#search');
+			search.onfocus = function() {
+				search.placeholder = '';
+			}
+			search.onblur = function() {
+				search.placeholder = '请输入搜索';
+			}
+		</script>
+		<script type="module" src="./js/nav.js"></script>
+		<!-- 分割线 -->
+		<div id="body-1">
+			<div id="body-2">
+				<div id="body-3">
+					<a id="arrow-l"></a>
+					<a id="arrow-r"></a>
+					<ul>
+						<li><a href="https://read.douban.com/ebook/320060973/" target="_blank"><img src="images/1.jpg"></a></li>
+						<li><a href="https://read.douban.com/ebook/321728263/" target="_blank"><img src="images/2.jpg"></a></li>
+						<li><a href="https://read.douban.com/ebook/318885166/" target="_blank"><img src="images/3.jpg"></a></li>
+						<li><a href="https://read.douban.com/ebook/319252112/" target="_blank"><img src="images/4.jpg"></a></li>
+						<li><a href="https://read.douban.com/ebook/126924549/" target="_blank"><img src="images/5.jpg"></a></li>
+						<li><a href="https://read.douban.com/ebook/318386527/" target="_blank"><img src="images/6.jpg"></a></li>
+					</ul>
+					<ol>
+					</ol>
+				</div>
+				<h2>新书速荐</h2>
+				<ul id='body-4'>
+					<li><a href="https://book.douban.com/subject/35308870/" target="_blank">
+							<div class="box-1"><img src="images/s33796341.jpg"></div>
+							<h3>梅里雪山</h3>
+						</a>
+						<p title="[日]小林尚礼">[日]小林尚礼</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/34933712/"  target="_blank">
+							<div class="box-1"><img src="images/s33823042.jpg"></div>
+							<h3>追求者</h3>
+						</a>
+						<p title="[阿根廷]胡里奥·科塔萨尔">[阿根廷]胡里奥·科塔萨尔</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35402317/" target="_blank">
+							<div class="box-1"><img src="images/s33853964.jpg"></div>
+							<h3>中国精怪故事</h3>
+						</a>
+						<p title="车锡伦 孙叔瀛 / 编">车锡伦 孙叔瀛 / 编</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35362277/" target="_blank">
+							<div class="box-1"><img src="images/s33858113.jpg"></div>
+							<h3>午夜阳光</h3>
+						</a>
+						<p title="[美]斯蒂芬妮·梅尔">[美]斯蒂芬妮·梅尔</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35413305/" target="_blank">
+							<div class="box-1"><img src="images/s33860067.jpg"></div>
+							<h3>我的名字叫“害怕”</h3>
+						</a>
+						<p title="[捷克] 米拉达·雷兹科娃  著 / 卢卡什·乌尔巴内克、雅各布·卡舍 绘">[捷克] 米拉达·雷兹科娃 著 / 卢卡什·乌尔巴内克、雅各布·卡舍 绘</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35415117/" target="_blank">
+							<div class="box-1"><img src="images/s33861689.jpg"></div>
+							<h3>时间的色彩</h3>
+						</a>
+						<p title="[英] 丹·琼斯 / [巴西] 玛丽娜·阿马拉尔">[英] 丹·琼斯 / [巴西] 玛丽娜·阿马拉尔</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35417020/" target="_blank">
+							<div class="box-1"><img src="images/s33863174.jpg"></div>
+							<h3>解剖维纳斯</h3>
+						</a>
+						<p title="[美]乔安娜•埃本斯坦">[美]乔安娜•埃本斯坦</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35418492/" target="_blank">
+							<div class="box-1"><img src="images/s33864521.jpg"></div>
+							<h3>简洁如照片</h3>
+						</a>
+						<p title="[英] 约翰·伯格">[英] 约翰·伯格</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35422114/" target="_blank">
+							<div class="box-1"><img src="images/s33866820.jpg"></div>
+							<h3>运送孩子的火车</h3>
+						</a>
+						<p title="[意] 薇奥拉·阿尔多内">[意] 薇奥拉·阿尔多内</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35314088/" target="_blank">
+							<div class="box-1"><img src="images/s33872142.jpg"></div>
+							<h3>黑豹红狼</h3>
+						</a>
+						<p title="[牙买加] 马龙·詹姆斯">[牙买加] 马龙·詹姆斯</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35273146/" target="_blank">
+							<div class="box-1"><img src="images/s33872741.jpg"></div>
+							<h3>家庭变奏曲</h3>
+						</a>
+						<p title="[美] 戴维·斯摩尔">[美] 戴维·斯摩尔</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35438227/" target="_blank">
+							<div class="box-1"><img src="images/s33878614.jpg"></div>
+							<h3>乡下人</h3>
+						</a>
+						<p title="孙德鹏">孙德鹏</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35292523/" target="_blank">
+							<div class="box-1"><img src="images/s33879441.jpg"></div>
+							<h3>绿色的夜</h3>
+						</a>
+						<p title="[日] 三岛由纪夫">[日] 三岛由纪夫</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35390390/" target="_blank">
+							<div class="box-1"><img src="images/s33880929.jpg"></div>
+							<h3>字母表谜案</h3>
+						</a>
+						<p title="大山诚一郎">大山诚一郎</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35447072/" target="_blank">
+							<div class="box-1"><img src="images/s33884825.jpg"></div>
+							<h3>像石头一样</h3>
+						</a>
+						<p title="[意] 亚历山德罗·桑纳">[意] 亚历山德罗·桑纳</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35450833/" target="_blank">
+							<div class="box-1"><img src="images/s33890139.jpg"></div>
+							<h3>白痴</h3>
+						</a>
+						<p title="[俄] 陀思妥耶夫斯基">[俄] 陀思妥耶夫斯基</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35450872/" target="_blank">
+							<div class="box-1"><img src="images/s33894287%20(1).jpg"></div>
+							<h3 title="1666：瘟疫、战争和伦敦大火">1666：瘟疫、战争和伦敦大火</h3>
+						</a>
+						<p title="[英]瑞贝卡·里迪尔">[英]瑞贝卡·里迪尔</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35455245/" target="_blank">
+							<div class="box-1"><img src="images/s33895040.jpg"></div>
+							<h3>过度的医疗</h3>
+						</a>
+						<p title="【德】尤格·布莱克">【德】尤格·布莱克</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35451769/" target="_blank">
+							<div class="box-1"><img src="images/s33896448.jpg"></div>
+							<h3>狼</h3>
+						</a>
+						<p>朱西甯</p>
+					</li>
+					<li><a href="https://book.douban.com/subject/35200619/" target="_blank">
+							<div class="box-1"><img src="images/s33898350.jpg"></div>
+							<h3>柳林风声</h3>
+						</a>
+						<p title="[英] 肯尼思·格雷厄姆 / [英]E.H.谢泼德">[英] 肯尼思·格雷厄姆 / [英]E.H.谢泼德</p>
+					</li>
+				</ul>
+				<div style="clear: both;"></div>
+				<h2>图书资讯</h2>
+				<span>
+					<a href="https://book.douban.com/subject/35308870/" target="_blank">
+						<img src="images/s33796341.jpg">
+						<h4>山魂与镇岭</h4>
+						<span>壹小明</span>
+						<p>东京新宿街头，人潮汹涌。拐角处，这家二楼咖啡馆倒显得闹中取静。
+							坐在对面的小林尚礼习惯性地抿了一口咖啡，继续回答我的下一个问题。我的搭档何老师，翻译同学，小林尚礼还有我，我们四个人已经坐在这里5个多...</p>
+					</a>
+				</span>
+				<span>
+					<a href="https://book.douban.com/review/13586013/" target="_blank">
+						<img src="images/s33906363.jpg">
+						<h4>夏日尤好梦，万物皆可瓜</h4>
+						<span>魚山飯寬</span>
+						<p>《夏天只是西瓜做的一个梦》 序言
+							去年夏天的一个晚上，与几位好友在了了家的院子里聚餐闲聊，吃瓜消暑。廊子里的灯光透过玻璃微微照亮了院里的大片菜地；谈笑间一直能听见阵阵虫鸣，声音时远时近，也好似来自院...</p>
+					</a>
+				</span>
+				<span>
+					<a href="#" target="_blank">
+						<img src="images/s33889309.jpg">
+						<h4>迟到了五十年的小说家，真正的悲剧是善与善的冲突</h4>
+						<span>理想国</span>
+						<p>2018年，台湾文学家朱西甯的长篇小说《旱魃》与短篇小说集《铁浆》由理想国出版，为他的作品在大陆首次面世。年末，《旱魃》入选新京报年度十大好书，是其中唯一一本华语文学创作。致敬辞中称《旱魃》为一部“悍...
+						</p>
+					</a>
+				</span>
+				<span>
+					<a href="https://book.douban.com/subject/35365952/s" target="_blank">
+						<img src="images/s33877840.jpg">
+						<h4>郭建龙：他在历史面前举起了手术刀——读杜君立新作“历史的细节”</h4>
+						<span>天地出版社</span>
+						<p>杜君立先生全新力作“历史的细节”五卷本，拿在手上是沉甸甸的，而打开阅读，则会惊叹于语言的质朴、细节的精微、材料的丰富、观点的新颖……
+							当人们都热衷于进行宏大叙事时，这套书却另辟蹊径，把看似庞大冗杂的...</p>
+					</a>
+				</span>
+				<span>
+					<a href="https://market.douban.com/book/jingdu/?region=zhishu_collect_books_list&location=14" target="_blank">
+						<img src="./images/s33846880.jpg">
+						<h4>探访满载故事的京都居酒屋</h4>
+						<span>库索</span>
+						<p>青年作家、资深媒体人库索，在京都生活六年，探访了无数载满故事的居酒屋。在这本书里，库索挑选了十余家京都居酒屋进行深入探访，从人生百态到各种居酒屋类型、时令下酒菜，全方位展现京都现代人特有的地域文...
+						</p>
+					</a>
+				</span>
+				<span>
+					<a href="https://book.douban.com/subject/34933440/" target="_blank">
+						<img src="./images/s33703771.jpg">
+						<h4>捕捉女性情感最深层的欲望和困境</h4>
+						<span>玛丽亚·路易莎·邦巴尔</span>
+						<p>《穿裹尸衣的女人》以一个死去的女性为主角，躺在灵床上的她虽然已经死去，却仍能看到、听到一切，一个个前来向她告别的亲人、朋友让女人回忆起这些人与自己的纠葛，她的初恋、她为他失去的孩子、她不爱但却...
+						</p>
+					</a>
+				</span>
+				<span>
+					<a href="https://market.douban.com/book/182/?region=zhishu_collect_books_list&location=17" target="_blank">
+						<img src="images/s33734103.jpg">
+						<h4>谜一般的神秘作家——埃莱娜·费兰特</h4>
+						<span>埃莱娜·费兰特</span>
+						<p>本书是费兰特20余年来的书信、访谈和散文集。她在书中袒露了自己对写作风格和主题的探索历程，并回顾了自己经历的自我怀疑和突破，这些对话睿智地诠释了女性和家庭、神话和文化、城市和记忆，以及作家和读者的复杂关系。
+						</p>
+					</a>
+				</span>
+				<span>
+					<a href="https://book.douban.com/subject/35236989/" target="_blank">
+						<img src="images/s33770734.jpg">
+						<h4>“不管什么时代，只种自己的一棵树去”</h4>
+						<span>李静睿</span>
+						<p>单向街书店文学奖年度青年作家李静睿，历经四年潜心写就首部长篇历史小说《慎余堂》，讲述北洋时期一个盐商家族的兴衰故事，在历史洪流的裹挟之下两代人的命运沉浮。在家国命运的恢宏大气和儿女情思的凄婉动人中，工笔细描，余韵悠长
+						</p>
+					</a>
+				</span>
+			</div>
+		</div>
+		<!-- 分割线 -->
+		<div id="footer-1">
+			<div id="footer-2" class="dynamic_title">
+				<span>&nbsp;</span>
+			</div>
+		</div>
+	</body>
+</html>

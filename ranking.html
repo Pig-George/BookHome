@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>榜单</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="style/nav_footer.css" />
+		<link rel="stylesheet" type="text/css" href="style/ranking.css" />
+		<script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	</head>
+	<body>
+		<div id="head">
+			<div id="head-1">
+				<a href="first.html" class="logo"><img src="images/logo.png"></a>
+				<div id="head-2">
+					<ul>
+						<li><a href="first.html"><span>首页</span></a></li>
+						<li><a href="ranking.html"><span>榜单</span></a></li>
+						<li><a href="user.html"><span>个人中心</span></a></li>
+						<li><a href="about.html"><span>关于</span></a></li>
+					</ul>
+					<form action="#" method="post" name="form1">
+						<input type="search" placeholder="请输入搜索" id="search" autocomplete="off" maxlength="20" />
+						<input type="submit" id="submit" value="" title="搜索" />
+					</form>
+				</div>
+				<div id="head-3">
+					<ul>
+						<li>
+							<a href="user.html" >
+								<img src="./img/a0.jpg" id="head-portrait" class="head-portrait-img">
+							</a>
+							<div id="head-portrait-box" >
+								<h3 id="user-name" class="user-name"></h3>
+								<p id="nav-user-sign" class="user-sign"></p>
+								<div id="nav-user-info-footer">
+									<div id="nav-user-coll-head" class="box-shadow">
+										<div>我的收藏</div>
+										<h3 id="nav-user-coll-num"></h3>
+									</div>
+									<div id="nav-user-concern-head" class="box-shadow">
+										<div>我的关注</div>
+										<h3 id="nav-user-concern-num"></h3>
+									</div>
+									<div id="nav-user-history-head" class="box-shadow">
+										<div>历史记录</div>
+										<h3 id="nav-user-history-num"></h3>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="" id="user-news"></a>
+							<span class="dot"></span>
+							<ul style="display: none;">
+								<li>
+									<a href="">我的消息</a>
+									<span class="dot"></span>
+								</li>
+							</ul>
+						</li>
+						<!-- 
+						导航栏 用户小工具栏 代码框架：
+						<li>
+							<a href="...">...</a>  icon图标
+							<span class="dot"></span>  小圆点
+							...
+							<ul style="display: none;">   下拉菜单内容
+								<li>
+									<a href="...">...</a> 菜单内容子项1
+									<span class=".."></span> 小圆点或者是其他符号
+								</li>
+								<li>
+									<a href="...">...</a> 菜单内容子项2
+									<span class=".."></span> 小圆点或者是其他符号
+								</li>
+								...
+							</ul>
+						</li> 
+						-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var search = document.querySelector('#search');
+			search.onfocus = function() {
+				search.placeholder = '';
+			}
+			search.onblur = function() {
+				search.placeholder = '请输入搜索';
+			}
+		</script>
+		<script type="module" src="./js/nav.js"></script>
+		<div id="body-1">
+			<div id="body-2">
+				<div id="rk_1">
+					<h2>最受关注图书榜TOP15</h2>
+					<p>哪些作家的话题备受关注？</p>
+					<ul>
+						<!-- max: 15本 -->
+						<li><a href="https://book.douban.com/subject/35272698/" target="_blank" title="糜骨之壤"><img src="images/s33774084.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35217952/" target="_blank" title="你想过怎样的一生？"><img src="images/s33732571.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35224085/" target="_blank" title="100天后会死的鳄鱼君"><img src="images/s33762397.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35230281/" target="_blank" title="下沉年代"><img src="images/s33792562.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35277887/" target="_blank" title="弃猫"><img src="images/s33783660.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35076023/" target="_blank" title="信"><img src="images/s33734467.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35094680/" target="_blank" title="桶川跟踪狂杀人事件"><img src="images/s33805848.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35169230/" target="_blank" title="明智的孩子"><img src="images/s33765530.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35413305/" target="_blank" title="我的名字叫“害怕”"><img src="images/s33860067.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35415117/" target="_blank" title="时间的色彩"><img src="images/s33861689.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35455245/" target="_blank" title="过度的医疗"><img src="images/s33895040.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35473103/" target="_blank" title="夏天只是西瓜做的一个梦"><img src="images/s33906363.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35390390/" target="_blank" title="字母表迷案"><img src="images/s33880929.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35436901/" target="_blank" title="重走"><img src="images/s33878309.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35319720/" target="_blank" title="美丽黑暗"><img src="images/s33849778.jpg"></a></li>
+					</ul>
+				</div>
+				<div id="rk_1">
+					<h2>畅销图书TOP10</h2>
+					<p>好读书，读好书</p>
+					<ul>
+						<li><a href="https://book.douban.com/subject/35143790/" target="_blank" title="蛤蟆先生去看心理医生"><img src="images/s33712151.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35045196/" target="_blank" title="纸神"><img src="images/s33672756.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35005062/" target="_blank" title="银河系边缘的小失常"><img src="images/s33653407.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30441551/" target="_blank" title="烧纸"><img src="images/s33642427.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35216559/" target="_blank" title="仙症"><img src="images/s33735176.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/34933701/" target="_blank" title="碎片"><img src="images/s33734103.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35083619/" target="_blank" title="旋涡 （全2册）"><img src="images/s33682886.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35092383/" target="_blank" title="把自己作为方法"><img src="images/s33683876.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/35236955/" target="_blank" title="内城故事"><img src="images/s33759500.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/34942789/" target="_blank" title="回归故里"><img src="images/s33659613.jpg"></a></li>
+					</ul>
+				</div>
+				<div id="rk_1">
+					<h2>科幻小说TOP10</h2>
+					<p>人类想象力的极限</p>
+					<ul>
+						<li><a href="https://book.douban.com/subject/2567698/" target="_blank" title="三体"><img src="images/s2768378.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30471298/" target="_blank" title="2001：太空漫游"><img src="images/s32330891.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26362836/" target="_blank" title="献给阿尔吉侬的花束"><img src="images/s28050760.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26389895/" target="_blank" title="银河帝国：基地七部曲"><img src="images/s28284246.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/25829693/" target="_blank" title="永恒的终结"><img src="images/s29555070.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/27002046/" target="_blank" title="美丽新世界"><img src="images/s29477615.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/27117515/" target="_blank" title="海伯利安四部曲"><img src="images/s29536494.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26389897/" target="_blank" title="银河帝国：机器人五部曲"><img src="images/s28284247.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/34672178/" target="_blank" title="你一生的故事"><img src="images/s33516836.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30396723/" target="_blank" title="真名实姓"><img src="images/s32330953.jpg"></a></li>
+					</ul>
+				</div>
+				<div id="rk_1">
+					<h2>推理小说TOP10</h2>
+					<p>迷雾重重，高潮迭起，欲罢不能的经典推理小说。</p>
+					<ul>
+						<li><a href="https://book.douban.com/subject/10554308/" target="_blank" title="白夜行"><img src="images/s30014645.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/25924253/" target="_blank" title="嫌疑人X的献身"><img src="images/s27676061.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/21371175/" target="_blank" title="罗杰疑案"><img src="images/s25814002.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26265745/" target="_blank" title="清明上河图密码"><img src="images/s27956707.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/34262174/" target="_blank" title="网内人"><img src="images/s33442256.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26923390/" target="_blank" title="长夜难明"><img src="images/s29179365.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26729776/" target="_blank" title="雪人"><img src="images/s28976471.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26864984/" target="_blank" title="金色梦乡"><img src="images/s29860726.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30316475/" target="_blank" title="漫长的告别"><img src="images/s29860112.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30207738/" target="_blank" title="3秒"><img src="images/s29972205.jpg"></a></li>
+					</ul>
+				</div>
+				<div id="rk_1">
+					<h2>电影图书TOP10</h2>
+					<p>当电影与书相遇。</p>
+					<ul>
+						<li><a href="https://book.douban.com/subject/34922269/" target="_blank" title="Mondo电影海报艺术典藏"><img src="images/s33546871.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/34978360/" target="_blank" title="伟大的电影 2"><img src="images/s33654865.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30441551/" target="_blank" title="烧纸"><img src="images/s33642427.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/34940772/" target="_blank" title="六个道德故事"><img src="images/s33629398.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30304849/" target="_blank" title="拍电影时我在想的事"><img src="images/s29864848.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30317910/" target="_blank" title="教父电影全剧本（全彩插图评注版）"><img src="images/s33519471.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/34949679/" target="_blank" title="小津安二郎剧本集"><img src="images/s33621611.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/27174130/" target="_blank" title="北野武的小酒馆"><img src="./images/s29660257.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/27062726/" target="_blank" title="贾想 I"><img src="images/s29486755.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/34320351/" target="_blank" title="因为我有生活"><img src="images/s33187120.jpg"></a></li>
+					</ul>
+				</div>
+				<div id="rk_1">
+					<h2>中国小说TOP10</h2>
+					<p>大家名作，必读经典</p>
+					<ul>
+						<li><a href="https://book.douban.com/subject/4913064/" target="_blank" title="活着"><img src="images/s29053580.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/3183775/" target="_blank" title="四世同堂"><img src="images/s28121775.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/10564071/" target="_blank" title="白鹿原"><img src="images/s33310159.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26710670/" target="_blank" title="呐喊"><img src="images/s28385441.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/11524204/" target="_blank" title="围城"><img src="./images/s11276847.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/10517238/" target="_blank" title="平凡的世界"><img src="images/s29980023.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/1963684/" target="_blank" title="半生缘"><img src="images/s30007351.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30163860/" target="_blank" title="绿毛水怪"><img src="images/s29774838.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/27010212/" target="_blank" title="芳华"><img src="./images/s29418322.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/23286393/" target="_blank" title="尘埃落定"><img src="images/s28046845.jpg"></a></li>
+					</ul>
+				</div>
+				<div id="rk_1">
+					<h2>外国小说TOP10</h2>
+					<p>放眼世界，汇集小说经典</p>
+					<ul>
+						<li><a href="https://book.douban.com/subject/3808982/" target="_blank" title="动物庄园"><img src="images/s6914420.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/6082808/" target="_blank" title="百年孤独"><img src="images/s33542403.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26803714/" target="_blank" title="人性的枷锁"><img src="images/s28758331.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/26389895/" target="_blank" title="银河帝国：基地七部曲"><img src="images/s28284246.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/6781808/" target="_blank" title="杀死一只知更鸟"><img src="images/s29350294.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/10554308/" target="_blank" title="白夜行"><img src="images/s30014645.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/30172069/" target="_blank" title="失踪的孩子"><img src="./images/s29799269.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/2253380/" target="_blank" title="安娜·卡列尼娜"><img src="images/s5763939.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/27002046/" target="_blank" title="美丽新世界"><img src="./images/s29477615.jpg"></a></li>
+						<li><a href="https://book.douban.com/subject/24257229/" target="_blank" title="鼠疫"><img src="images/s29487838.jpg"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div id="footer-1">
+			<div id="footer-2" class="dynamic_title">
+				<span>&nbsp;</span>
+			</div>
+		</div>
+	</body>
+</html>

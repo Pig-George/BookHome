@@ -1,0 +1,42 @@
+#head-2 li:nth-child(4) a {
+	background-color: gray;
+	color: #FFFFFF;
+	}
+	
+#footer-1{
+	position: fixed!important;
+}
+
+#body-2{
+	color: #525252;
+}
+#body-head{
+	margin: 0 0 100px 20px;
+	font-size: 25px;
+}
+#body-body{
+	width: 800px;
+	margin: 0 auto;
+	letter-spacing:5px;
+	
+}
+#body-body #headname{
+	float: left;
+	font-family: "仿宋";
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+#body-body p{
+	display: inline-block;
+	height: 40px;
+	font-family: "仿宋";
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 40px;
+	text-indent: 2em;
+}
+#body-2>p{
+	margin: 100px 20px 0 0;
+	text-align: right;
+}

@@ -1,0 +1,192 @@
+@keyframes cursor-flashing{
+	from {
+		border-color: #525252;
+	}
+	
+	to {
+		border-color: transparent;
+	}
+}
+
+#head-2 li:nth-child(3) a {
+	background-color: gray;
+	color: #FFFFFF;
+	}
+
+#body-3-enter h1 {
+	margin-left: 20px;
+	padding-top: 30px;
+	height: 75px;
+}
+
+#body-3-enter h1 span {
+	font-size: 40px;
+}
+
+#dynamic_title span:last-child {
+	height: 47px;
+	width: 25px;
+	border-bottom: 8px solid #525252;
+}
+
+#body-3-enter {
+	color: #525252;
+}
+
+#login {
+	position: relative;
+	overflow: hidden;
+	width: 500px;
+	margin: 20px auto 0 auto;
+	padding-bottom: 30px;
+	padding: 30px;
+}
+
+#login_head {
+	overflow: hidden;
+	height: 35px;
+	width: 120px;
+	margin-bottom: 30px;
+}
+
+#login_head_nav {
+	position: relative;
+	right: 0px;
+	width: 300px;
+	transition: all ease 0.3s;
+}
+
+#login_head h2 {
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	margin-right: 40px;
+	text-align: left;
+	font-size: 25px;
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+
+#login input {
+	display: block;
+	box-sizing: border-box;
+	width: 350px;
+	height: 40px;
+	padding: 0 10px;
+	font-size: 16px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	border: 1px solid #808080;
+	border-radius: 2px;
+	color: #525252;
+	transition: all ease-in-out 0.3s;
+}
+
+
+#user-form-change input:focus {
+	border-bottom: 4px solid #525252;
+}
+
+#pwd_head {
+	position: relative;
+}
+
+#pwd_head input {
+	padding-right: 50px;
+}
+
+#pwd_head #display_pwd {
+	font-family: icon;
+	position: absolute;
+	cursor: pointer;
+	top: 10px;
+	right: 90px;
+}
+
+#submit_button:hover,
+#submit_button:focus,
+#send_auth_code:hover,
+#send_auth_code:focus{
+	border: 1px solid #808080 !important;
+	background-color: #808080;
+	color: #ffffff;
+}
+
+#user-form-change {
+	overflow: hidden;
+	height: 160px;
+	/* height: 300px; */
+	transition: all ease-in-out 0.45s;
+}
+
+#user-form-head {
+	height: 18px;
+	width: ;
+}
+
+#user-form-event {
+	position: relative;
+	top: -30px;
+	margin: 0 auto;
+	width: 350px;
+	height: 0px;
+	padding: 0 10px;
+	transition: all ease-in-out 0.45s;
+	z-index: 10;
+}
+
+#forget_pwd,
+#user-change-button {
+	height: 0;
+	font-size: 14px;
+	margin: 0 10px;
+	transition: all ease-in-out 0.3s;
+}
+
+#auth_code_haed {
+	position: relative;
+	margin: 0 auto;
+	width: 350px;
+}
+
+#auth_code_haed #auth_code {
+	display: inline-block;
+	margin: 0;
+	width: 170px;
+}
+
+#auth_code_haed #send_auth_code {
+	position: absolute;
+	right: 0px;
+	display: inline-block;
+	width: 170px;
+}
+
+#forget_pwd {
+	float: left;
+}
+
+
+#user-change-button {
+	float: right;
+}
+#user-form-event span:hover {
+	color: #4891da;
+	cursor: pointer;
+}
+
+
+#footer-1 {
+    position: relative !important;
+    bottom: 0;
+}
+
+
+.succeed_input {
+	border-color: green !important;
+}
+
+.fill_input {
+	border-color: #e90000 !important;
+}

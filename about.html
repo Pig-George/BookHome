@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>关于</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="style/nav_footer.css"/>
+		<link rel="stylesheet" type="text/css" href="style/about.css"/>
+		<script src="https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	</head>
+	<body>
+		<div id="head">
+			<div id="head-1">
+				<a href="first.html" class="logo"><img src="images/logo.png"></a>
+				<div id="head-2">
+					<ul>
+						<li><a href="first.html"><span>首页</span></a></li>
+						<li><a href="ranking.html"><span>榜单</span></a></li>
+						<li><a href="user.html"><span>个人中心</span></a></li>
+						<li><a href="about.html"><span>关于</span></a></li>
+					</ul>
+					<form action="#" method="post" name="form1">
+						<input type="search" placeholder="请输入搜索" id="search" autocomplete="off" maxlength="20" />
+						<input type="submit" id="submit" value="" title="搜索" />
+					</form>
+				</div>
+				<div id="head-3">
+					<ul>
+						<li>
+							<a href="user.html" >
+								<img src="./img/a0.jpg" id="head-portrait" class="head-portrait-img">
+							</a>
+							<div id="head-portrait-box" >
+								<h3 id="user-name" class="user-name"></h3>
+								<p id="nav-user-sign" class="user-sign"></p>
+								<div id="nav-user-info-footer">
+									<div id="nav-user-coll-head" class="box-shadow">
+										<div>我的收藏</div>
+										<h3 id="nav-user-coll-num"></h3>
+									</div>
+									<div id="nav-user-concern-head" class="box-shadow">
+										<div>我的关注</div>
+										<h3 id="nav-user-concern-num"></h3>
+									</div>
+									<div id="nav-user-history-head" class="box-shadow">
+										<div>历史记录</div>
+										<h3 id="nav-user-history-num"></h3>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="" id="user-news"></a>
+							<span class="dot"></span>
+							<ul style="display: none;">
+								<li>
+									<a href="">我的消息</a>
+									<span class="dot"></span>
+								</li>
+							</ul>
+						</li>
+						<!-- 
+						导航栏 用户小工具栏 代码框架：
+						<li>
+							<a href="...">...</a>  icon图标
+							<span class="dot"></span>  小圆点
+							...
+							<ul style="display: none;">   下拉菜单内容
+								<li>
+									<a href="...">...</a> 菜单内容子项1
+									<span class=".."></span> 小圆点或者是其他符号
+								</li>
+								<li>
+									<a href="...">...</a> 菜单内容子项2
+									<span class=".."></span> 小圆点或者是其他符号
+								</li>
+								...
+							</ul>
+						</li> 
+						-->
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var search = document.querySelector('#search');
+			search.onfocus = function() {
+				search.placeholder = '';
+			}
+			search.onblur = function() {
+				search.placeholder = '请输入搜索';
+			}
+		</script>
+		<script type="module" src="./js/nav.js"></script>
+		<div id="body-1">
+			<div id="body-2">
+				<div id="body-head">
+					<h1>关于书坊：</h1>
+				</div>
+				<div id="body-body">
+					<span id="headname">
+						书坊：
+					</span>
+					<p>书是人类进步的阶梯。书让我们一起在知识的海洋里遨游，享受读书的乐趣。书让我们找到一个最好的、最忠实的朋友，它永远不会抛弃你，也不会背叛你。无论我们是在欢乐或痛苦中，还是在寂寞或彷徨时，书总会静静地伴在我的身边，分享我们的喜悦，抚慰我们的心灵。书，即书坊，书坊将陪你一起成长。</p>
+				</div>
+				<p>书坊作品灵感和书籍数据来源于豆瓣读书</p>
+				<p style="margin-top: 10px;">2021年6月20日</p>
+			</div>
+		</div>
+		<div id="footer-1">
+			<div id="footer-2" class="dynamic_title">
+				<span>&nbsp;</span>
+			</div>
+		</div>
+	</body>
+</html>
