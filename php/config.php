@@ -2,7 +2,7 @@
     //sql:
     define('SQL_SERVER_NAME', 'localhost');
     define('SQL_USER_NAME', 'BookHome');
-    define('SQL_UPWD', '2002617hxb');
+    define('SQL_UPWD', '');
     define('SQL_DB_NAME', 'BookHome');
     
     //log:
@@ -13,7 +13,7 @@
     
     //email:
     define('EMAIL_USER', 'pig-george@qq.com');
-    define('EMAIL_PWD', 'dcprajyqspdhdgbj');
+    define('EMAIL_PWD', '');
     define('EMAIL_HOST', 'smtp.qq.com');
     define('EMAIL_PORT', 465);
     
